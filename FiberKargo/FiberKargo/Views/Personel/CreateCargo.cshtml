@@ -1,0 +1,199 @@
+﻿@model FiberKargo.Models.Cargo
+@{
+    ViewBag.Title = "Yeni Kargo Oluştur";
+    ViewBag.ActivePage = "CreateCargo";
+    Layout = "~/Views/Shared/_PersonelLayout.cshtml";
+
+    var branches = new[] { "Adana", "Ankara", "İstanbul", "İzmir", "Bursa" };
+}
+
+<h2 class="mb-4"><i class="bi bi-plus-circle me-2"></i>Yeni Kargo Oluştur</h2>
+
+<div class="row">
+    <div class="col-lg-8">
+        <div class="card p-4">
+            @using (Html.BeginForm("CreateCargo", "Personel", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                <h5 class="mb-3 text-primary"><i class="bi bi-person me-2"></i>Gönderici Bilgileri</h5>
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <label class="form-label">Ad Soyad</label>
+                        @Html.TextBoxFor(m => m.SenderName, new { @class = "form-control", required = "required" })
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Telefon</label>
+                        <div class="input-group">
+                            <span class="input-group-text">+90</span>
+                            @Html.TextBoxFor(m => m.SenderTel, new
+                            {
+                                @class = "form-control",
+                                placeholder = "5XX XXX XX XX",
+                                maxlength = "10",
+                                required = "required",
+                                pattern = "5[0-9]{9}"
+                            })
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="mb-3 text-primary"><i class="bi bi-person-check me-2"></i>Alıcı Bilgileri</h5>
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <label class="form-label">Ad Soyad</label>
+                        @Html.TextBoxFor(m => m.ReceiverName, new { @class = "form-control", required = "required" })
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Telefon</label>
+                        <div class="input-group">
+                            <span class="input-group-text">+90</span>
+                            @Html.TextBoxFor(m => m.ReceiverTel, new
+                            {
+                                @class = "form-control",
+                                placeholder = "5XX XXX XX XX",
+                                maxlength = "10",
+                                required = "required",
+                                pattern = "5[0-9]{9}"
+                            })
+                        </div>
+                    </div>
+                </div>
+
+                <h5 class="mb-3 text-primary"><i class="bi bi-box me-2"></i>Kargo Bilgileri</h5>
+                <div class="row g-3 mb-4">
+                    <div class="col-md-6">
+                        <label class="form-label">Varış Şubesi</label>
+                        @Html.DropDownListFor(m => m.Destination,
+                            new SelectList(branches),
+                            "Şube Seçin",
+                            new { @class = "form-select", required = "required", id = "destination" })
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">İçerik</label>
+                        @Html.TextBoxFor(m => m.Content, new { @class = "form-control", required = "required" })
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Ağırlık (kg)</label>
+                        @Html.TextBoxFor(m => m.Weight, new
+                        {
+                            @class = "form-control",
+                            type = "number",
+                            step = "0.1",
+                            min = "0.1",
+                            required = "required",
+                            id = "weight"
+                        })
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">En (cm)</label>
+                        @Html.TextBoxFor(m => m.Width, new
+                        {
+                            @class = "form-control",
+                            type = "number",
+                            min = "1",
+                            required = "required",
+                            id = "width"
+                        })
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Boy (cm)</label>
+                        @Html.TextBoxFor(m => m.Length, new
+                        {
+                            @class = "form-control",
+                            type = "number",
+                            min = "1",
+                            required = "required",
+                            id = "length"
+                        })
+                    </div>
+                    <div class="col-md-3">
+                        <label class="form-label">Yükseklik (cm)</label>
+                        @Html.TextBoxFor(m => m.Height, new
+                        {
+                            @class = "form-control",
+                            type = "number",
+                            min = "1",
+                            required = "required",
+                            id = "height"
+                        })
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label">Ödeme Türü</label>
+                        @Html.DropDownListFor(m => m.PaymentType,
+                            new SelectList(new[] { "Peşin", "Kapıda Ödeme" }),
+                            "Ödeme Türü Seçin",
+                            new { @class = "form-select", required = "required" })
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-outline-secondary me-2" id="calculatePriceBtn">
+                    <i class="bi bi-calculator me-2"></i>Fiyat Hesapla
+                </button>
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-check-lg me-2"></i>Kargo Oluştur
+                </button>
+            }
+        </div>
+    </div>
+
+    <div class="col-lg-4">
+        <div class="card p-4" id="priceCard" style="display:none;">
+            <h5 class="mb-3"><i class="bi bi-receipt me-2"></i>Fiyat Bilgisi</h5>
+            <table class="table table-borderless">
+                <tr>
+                    <td>Mesafe:</td>
+                    <td class="text-end"><strong id="resultDistance">-</strong></td>
+                </tr>
+                <tr>
+                    <td>Desi:</td>
+                    <td class="text-end"><strong id="resultDesi">-</strong></td>
+                </tr>
+            </table>
+            <hr>
+            <div class="d-flex justify-content-between fs-4">
+                <span>Toplam:</span>
+                <strong class="text-primary" id="resultPrice">-</strong>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts {
+    <script>
+    $('#calculatePriceBtn').on('click', function() {
+        var destination = $('#destination').val();
+        var weight = $('#weight').val();
+        var width = $('#width').val();
+        var length = $('#length').val();
+        var height = $('#height').val();
+
+        if (!destination || !weight || !width || !length || !height) {
+            alert('Lütfen tüm alanları doldurun.');
+            return;
+        }
+
+        $.ajax({
+            url: '@Url.Action("CalculateCargoPrice", "Personel")',
+            type: 'POST',
+            data: {
+                destination: destination,
+                weight: weight,
+                width: width,
+                length: length,
+                height: height
+            },
+            success: function(response) {
+                if (response.success) {
+                    $('#resultDistance').text(response.distance + ' km');
+                    $('#resultDesi').text(response.desi);
+                    $('#resultPrice').text(response.price + ' ₺');
+                    $('#priceCard').show();
+                } else {
+                    alert(response.message);
+                }
+            }
+        });
+    });
+    </script>
+}

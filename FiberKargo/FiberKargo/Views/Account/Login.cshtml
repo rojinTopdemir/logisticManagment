@@ -1,0 +1,169 @@
+﻿@model FiberKargo.Models.LoginViewModel
+@{
+    ViewBag.Title = "Giriş Yap";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giriş Yap - Fiber Kargo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #ff5fa2; /* Soft barbie pembe */
+            --secondary-color: #ff8ccf; /* Açık pastel pembe */
+            --accent-color: #ffe1f0; /* Pudra pembesi */
+            --light-color: #fff7fb; /* Çok açık pembe arka plan */
+            --dark-color: #d63384; /* Dengeli koyu pembe */
+        }
+
+
+        body {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .login-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+            max-width: 400px;
+            width: 100%;
+        }
+
+        .login-header {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .login-body {
+            padding: 30px;
+        }
+
+        .form-control:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(230, 57, 70, 0.25);
+        }
+
+        .btn-login {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            padding: 12px;
+            font-weight: bold;
+        }
+
+            .btn-login:hover {
+                opacity: 0.9;
+            }
+
+        .captcha-box {
+            background: linear-gradient(45deg, #f8f9fa, #e9ecef);
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+        }
+
+        .captcha-display {
+            font-family: 'Courier New', monospace;
+            font-size: 28px;
+            font-weight: bold;
+            background: linear-gradient(to right, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 6px;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-card">
+        <div class="login-header">
+            <h2><i class="bi bi-box-seam me-2"></i>Fiber Kargo</h2>
+            <p class="mb-0">Personel / Admin Girişi</p>
+        </div>
+        <div class="login-body">
+            @using (Html.BeginForm("Login", "Account", FormMethod.Post))
+            {
+                @Html.AntiForgeryToken()
+
+                @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+
+                <div class="mb-3">
+                    <label class="form-label">Kullanıcı Adı</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person"></i></span>
+                        @Html.TextBoxFor(m => m.Username, new { @class = "form-control", placeholder = "Kullanıcı adınız", required = "required" })
+                    </div>
+                    @Html.ValidationMessageFor(m => m.Username, "", new { @class = "text-danger small" })
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Şifre</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                        @Html.PasswordFor(m => m.Password, new { @class = "form-control", placeholder = "Şifreniz", required = "required" })
+                    </div>
+                    @Html.ValidationMessageFor(m => m.Password, "", new { @class = "text-danger small" })
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Güvenlik Kodu</label>
+                    <div class="captcha-box mb-2">
+                        <span class="captcha-display" id="captchaDisplay">Yükleniyor...</span>
+                        <button type="button" class="btn btn-link btn-sm" id="refreshCaptcha">
+                            <i class="bi bi-arrow-clockwise"></i> Yenile
+                        </button>
+                    </div>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-shield-lock"></i></span>
+                        @Html.TextBoxFor(m => m.Captcha, new { @class = "form-control", placeholder = "Yukarıdaki kodu girin", required = "required" })
+                    </div>
+                    @Html.ValidationMessageFor(m => m.Captcha, "", new { @class = "text-danger small" })
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-login w-100">
+                    <i class="bi bi-box-arrow-in-right me-2"></i>Giriş Yap
+                </button>
+            }
+
+            <div class="text-center mt-4">
+                <a href="@Url.Action("Index", "Home")" class="text-decoration-none">
+                    <i class="bi bi-arrow-left me-1"></i>Ana Sayfaya Dön
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <script>
+        function loadCaptcha() {
+            $.ajax({
+                url: '@Url.Action("RefreshCaptcha", "Account")',
+                type: 'GET',
+                success: function(response) {
+                    $('#captchaDisplay').text(response.captcha);
+                }
+            });
+        }
+
+        $(document).ready(function() {
+            loadCaptcha();
+
+            $('#refreshCaptcha').on('click', function() {
+                loadCaptcha();
+            });
+        });
+    </script>
+</body>
+</html>

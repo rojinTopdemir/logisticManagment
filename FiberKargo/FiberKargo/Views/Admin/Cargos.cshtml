@@ -1,0 +1,155 @@
+﻿@model List<FiberKargo.Models.Cargo>
+@{
+    ViewBag.Title = "Tüm Kargolar";
+    ViewBag.ActivePage = "Cargos";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+
+    var branches = ViewBag.Branches as List<string> ?? new List<string>();
+    var selectedBranch = ViewBag.SelectedBranch as string;
+    var viewMode = Request.Cookies["adminCargoViewMode"]?.Value ?? "table"; // Cookie veya LocalStorage kullanılabilir
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2><i class="bi bi-box me-2"></i>Tüm Kargolar</h2>
+    <div class="d-flex gap-2">
+        @* Görünüm Değiştirme Butonları *@
+        <div class="btn-group me-2" role="group">
+            <button type="button" class="btn btn-outline-secondary @(viewMode == "table" ? "active" : "")" onclick="setViewMode('table')" id="btnTable">
+                <i class="bi bi-table"></i>
+            </button>
+            <button type="button" class="btn btn-outline-secondary @(viewMode == "card" ? "active" : "")" onclick="setViewMode('card')" id="btnCard">
+                <i class="bi bi-grid-3x3-gap"></i>
+            </button>
+        </div>
+
+        <select class="form-select" id="branchFilter" style="width: 200px;">
+            <option value="">Tüm Şubeler</option>
+            @foreach (var branch in branches)
+            {
+                <option value="@branch" @(selectedBranch == branch ? "selected" : "")>@branch</option>
+            }
+        </select>
+    </div>
+</div>
+
+@* Tablo Görünümü *@
+<div id="tableView" style="display: @(viewMode == "table" ? "block" : "none");">
+    <div class="table-container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Kargo No</th>
+                    <th>Gönderici</th>
+                    <th>Alıcı</th>
+                    <th>Güzergah</th>
+                    <th>Durum</th>
+                    <th>Tarih</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var cargo in Model)
+                {
+                    <tr>
+                        <td><strong>@cargo.CargoNo</strong></td>
+                        <td>@cargo.SenderName<br><small class="text-muted">@cargo.SenderTel</small></td>
+                        <td>@cargo.ReceiverName<br><small class="text-muted">@cargo.ReceiverTel</small></td>
+                        <td>
+                            <span class="badge bg-secondary">@cargo.Origin</span>
+                            <i class="bi bi-arrow-right mx-1"></i>
+                            <span class="badge bg-primary">@cargo.Destination</span>
+                        </td>
+                        <td>
+                            @{
+                                var statusClass = cargo.Status == "Teslim Edildi" ? "bg-success" :
+                                                 cargo.Status == "Dağıtımda" ? "bg-warning text-dark" : "bg-info";
+                            }
+                            <span class="badge @statusClass">@cargo.Status</span>
+                        </td>
+                        <td>@cargo.CreateTime.ToString("dd.MM.yyyy HH:mm")</td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-sm btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                                    Durum Değiştir
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#" onclick="updateStatus(@cargo.Id, 'Şubede')">Şubede</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="updateStatus(@cargo.Id, 'Dağıtımda')">Dağıtımda</a></li>
+                                    <li><a class="dropdown-item" href="#" onclick="updateStatus(@cargo.Id, 'Teslim Edildi')">Teslim Edildi</a></li>
+                                </ul>
+                            </div>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@* Kart Görünümü *@
+<div id="cardView" style="display: @(viewMode == "card" ? "block" : "none");">
+    <div class="row">
+        @foreach (var cargo in Model)
+        {
+            <div class="col-md-6 col-lg-4">
+                @Html.Partial("_CargoCard", cargo)
+            </div>
+        }
+    </div>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="text-center py-5 text-muted">
+        <i class="bi bi-inbox display-4"></i>
+        <p class="mt-3">Henüz kargo bulunmamaktadır.</p>
+    </div>
+}
+
+@section scripts {
+    <script>
+    // Görünüm modu fonksiyonu
+    function setViewMode(mode) {
+        localStorage.setItem('adminCargoViewMode', mode);
+        if (mode === 'table') {
+            $('#tableView').show();
+            $('#cardView').hide();
+            $('#btnTable').addClass('active');
+            $('#btnCard').removeClass('active');
+        } else {
+            $('#tableView').hide();
+            $('#cardView').show();
+            $('#btnCard').addClass('active');
+            $('#btnTable').removeClass('active');
+        }
+    }
+
+    // Sayfa yüklendiğinde modu hatırla
+    $(document).ready(function() {
+        var savedMode = localStorage.getItem('adminCargoViewMode') || 'table';
+        setViewMode(savedMode);
+    });
+
+    $('#branchFilter').on('change', function() {
+        var branch = $(this).val();
+        window.location.href = '@Url.Action("Cargos", "Admin")' + (branch ? '?branch=' + encodeURIComponent(branch) : '');
+    });
+
+    function updateStatus(id, status) {
+        if(confirm('Kargo durumunu "' + status + '" olarak güncellemek istediğinize emin misiniz?')) {
+            $.ajax({
+                url: '@Url.Action("UpdateCargoStatus", "Admin")',
+                type: 'POST',
+                data: { id: id, status: status },
+                success: function(response) {
+                    if (response.success) {
+                        location.reload();
+                    } else {
+                        alert("Hata oluştu!");
+                    }
+                }
+            });
+        }
+    }
+    </script>
+}

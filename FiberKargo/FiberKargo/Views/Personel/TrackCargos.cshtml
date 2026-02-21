@@ -1,0 +1,192 @@
+﻿@model List<FiberKargo.Models.Cargo>
+@{
+    ViewBag.Title = "Kargo Takip";
+    ViewBag.ActivePage = "TrackCargos";
+    Layout = "~/Views/Shared/_PersonelLayout.cshtml";
+    
+    // Görünüm modu (varsayılan: tablo)
+    var viewMode = ViewBag.ViewMode ?? "table";
+}
+
+<div class="d-flex justify-content-between align-items-center mb-4">
+    <h2><i class="bi bi-search me-2"></i>@ViewBag.Branch Şubesi Kargoları</h2>
+    <div>
+        <div class="btn-group me-2" role="group">
+            <button type="button" class="btn btn-outline-secondary @(viewMode == "table" ? "active" : "")" onclick="setViewMode('table')" title="Tablo Görünümü">
+                <i class="bi bi-table"></i>
+            </button>
+            <button type="button" class="btn btn-outline-secondary @(viewMode == "card" ? "active" : "")" onclick="setViewMode('card')" title="Kart Görünümü">
+                <i class="bi bi-grid-3x3-gap"></i>
+            </button>
+        </div>
+        <a href="@Url.Action("CreateCargo", "Personel")" class="btn btn-primary">
+            <i class="bi bi-plus-circle me-2"></i>Yeni Kargo
+        </a>
+    </div>
+</div>
+
+@* Tablo Görünümü *@
+<div id="tableView" style="display: @(viewMode == "table" ? "block" : "none");">
+    <div class="table-container">
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Kargo No</th>
+                    <th>Gönderici</th>
+                    <th>Alıcı</th>
+                    <th>Varış</th>
+                    <th>Durum</th>
+                    <th>Ücret</th>
+                    <th>Tarih</th>
+                    <th>İşlemler</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var cargo in Model)
+                {
+                    <tr>
+                        <td><strong>@cargo.CargoNo</strong></td>
+                        <td>
+                            @cargo.SenderName<br>
+                            <small class="text-muted">@cargo.SenderTel</small>
+                        </td>
+                        <td>
+                            @cargo.ReceiverName<br>
+                            <small class="text-muted">@cargo.ReceiverTel</small>
+                        </td>
+                        <td>
+                            <span class="badge bg-primary">@cargo.Destination</span>
+                        </td>
+                        <td>
+                            @{
+                                var statusClass = cargo.Status == "Teslim Edildi" ? "bg-success" :
+                                                 cargo.Status == "Dağıtımda" ? "bg-warning text-dark" : "bg-info";
+                            }
+                            <span class="badge @statusClass">@cargo.Status</span>
+                        </td>
+                        <td>
+                            @if (cargo.Price.HasValue)
+                            {
+                                <strong>@cargo.Price.Value.ToString("F2") ₺</strong>
+                            }
+                            else
+                            {
+                                <span class="text-muted">-</span>
+                            }
+                        </td>
+                        <td>
+                            @cargo.CreateTime.ToString("dd.MM.yyyy")
+                        </td>
+                        <td>
+                            @if (cargo.Status == "Şubede")
+                            {
+                                <button class="btn btn-sm btn-warning" onclick="sendToDistribution(@cargo.Id)">
+                                    <i class="bi bi-truck"></i> Dağıtıma Gönder
+                                </button>
+                            }
+                            else if (cargo.Status == "Dağıtımda")
+                            {
+                                <button class="btn btn-sm btn-success" onclick="deliverCargo(@cargo.Id)">
+                                    <i class="bi bi-check-lg"></i> Teslim Et
+                                </button>
+                            }
+                            else
+                            {
+                                <span class="text-success"><i class="bi bi-check-circle"></i> Teslim Edildi</span>
+                            }
+
+                            <a href="@Url.Action("EditCargo", "Personel", new { id = cargo.Id })" class="btn btn-sm btn-outline-primary">
+                                <i class="bi bi-pencil"></i>
+                            </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@* Kart Görünümü *@
+<div id="cardView" style="display: @(viewMode == "card" ? "block" : "none");">
+    <div class="row">
+        @foreach (var cargo in Model)
+        {
+            <div class="col-md-6 col-lg-4">
+                @Html.Partial("_CargoCard", cargo)
+            </div>
+        }
+    </div>
+</div>
+
+@if (!Model.Any())
+{
+    <div class="text-center py-5 text-muted">
+        <i class="bi bi-inbox display-4"></i>
+        <p class="mt-3">Henüz bu şubede kargo bulunmamaktadır.</p>
+        <a href="@Url.Action("CreateCargo", "Personel")" class="btn btn-primary">
+            <i class="bi bi-plus-circle me-2"></i>İlk Kargoyu Oluştur
+        </a>
+    </div>
+}
+
+@section scripts {
+    <script>
+    // Görünüm modu değiştirme
+    function setViewMode(mode) {
+        localStorage.setItem('cargoViewMode', mode);
+        if (mode === 'table') {
+            document.getElementById('tableView').style.display = 'block';
+            document.getElementById('cardView').style.display = 'none';
+        } else {
+            document.getElementById('tableView').style.display = 'none';
+            document.getElementById('cardView').style.display = 'block';
+        }
+        // Buton aktifliğini güncelle
+        document.querySelectorAll('.btn-group .btn').forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+        event.target.closest('.btn').classList.add('active');
+    }
+
+    // Sayfa yüklendiğinde kayıtlı görünüm modunu uygula
+    document.addEventListener('DOMContentLoaded', function() {
+        var savedMode = localStorage.getItem('cargoViewMode') || 'table';
+        if (savedMode === 'card') {
+            document.getElementById('tableView').style.display = 'none';
+            document.getElementById('cardView').style.display = 'block';
+            document.querySelectorAll('.btn-group .btn')[1].classList.add('active');
+            document.querySelectorAll('.btn-group .btn')[0].classList.remove('active');
+        }
+    });
+
+    function sendToDistribution(id) {
+        if (confirm('Bu kargoyu dağıtıma göndermek istediğinize emin misiniz?')) {
+            $.ajax({
+                url: '@Url.Action("SendToDistribution", "Personel")',
+                type: 'POST',
+                data: { id: id },
+                success: function(response) {
+                    if (response.success) {
+                        location.reload();
+                    }
+                }
+            });
+        }
+    }
+
+    function deliverCargo(id) {
+        if (confirm('Bu kargoyu teslim edildi olarak işaretlemek istediğinize emin misiniz?')) {
+            $.ajax({
+                url: '@Url.Action("DeliverCargo", "Personel")',
+                type: 'POST',
+                data: { id: id },
+                success: function(response) {
+                    if (response.success) {
+                        location.reload();
+                    }
+                }
+            });
+        }
+    }
+    </script>
+}

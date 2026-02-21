@@ -1,0 +1,77 @@
+﻿@model FiberKargo.Models.DashboardViewModel
+@{
+    ViewBag.Title = "Admin Dashboard";
+    ViewBag.ActivePage = "Dashboard";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mb-4"><i class="bi bi-speedometer2 me-2"></i>Dashboard</h2>
+
+<div class="row g-4 mb-4">
+    <div class="col-md-3">
+        <div class="card stat-card p-4 text-center">
+            <i class="bi bi-box fs-1 mb-2"></i>
+            <h3 class="mb-0">@Model.TotalCargos</h3>
+            <small>Toplam Kargo</small>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card p-4 text-center">
+            <i class="bi bi-check-circle fs-1 mb-2"></i>
+            <h3 class="mb-0">@Model.DeliveredCargos</h3>
+            <small>Teslim Edilen</small>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card p-4 text-center">
+            <i class="bi bi-people fs-1 mb-2"></i>
+            <h3 class="mb-0">@Model.StaffCount</h3>
+            <small>Personel Sayısı</small>
+        </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card stat-card p-4 text-center">
+            <i class="bi bi-star fs-1 mb-2"></i>
+            <h3 class="mb-0">@Model.AverageRating.ToString("F1")</h3>
+            <small>Ortalama Puan</small>
+        </div>
+    </div>
+</div>
+
+<div class="row g-4">
+    <div class="col-md-6">
+        <div class="card p-4">
+            <h5 class="mb-3"><i class="bi bi-lightning me-2"></i>Hızlı İşlemler</h5>
+            <div class="d-grid gap-2">
+                <a href="@Url.Action("CreateStaff", "Admin")" class="btn btn-outline-primary">
+                    <i class="bi bi-person-plus me-2"></i>Yeni Personel Ekle
+                </a>
+                <a href="@Url.Action("Cargos", "Admin")" class="btn btn-outline-primary">
+                    <i class="bi bi-box me-2"></i>Tüm Kargoları Görüntüle
+                </a>
+                <a href="@Url.Action("Reports", "Admin")" class="btn btn-outline-primary">
+                    <i class="bi bi-graph-up me-2"></i>Raporları Görüntüle
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class="card p-4">
+            <h5 class="mb-3"><i class="bi bi-info-circle me-2"></i>Sistem Bilgileri</h5>
+            <table class="table table-borderless">
+                <tr>
+                    <td><i class="bi bi-calendar me-2"></i>Tarih</td>
+                    <td class="text-end">@DateTime.Now.ToString("dd.MM.yyyy")</td>
+                </tr>
+                <tr>
+                    <td><i class="bi bi-clock me-2"></i>Saat</td>
+                    <td class="text-end">@DateTime.Now.ToString("HH:mm")</td>
+                </tr>
+                <tr>
+                    <td><i class="bi bi-chat-dots me-2"></i>Toplam Yorum</td>
+                    <td class="text-end">@Model.TotalFeedbacks</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

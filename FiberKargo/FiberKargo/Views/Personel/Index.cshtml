@@ -1,0 +1,49 @@
+﻿@{
+    ViewBag.Title = "Personel Panel";
+    ViewBag.ActivePage = "Dashboard";
+    Layout = "~/Views/Shared/_PersonelLayout.cshtml";
+}
+
+<h2 class="mb-4">
+    <i class="bi bi-speedometer2 me-2"></i>Hoş Geldiniz, @ViewBag.UserName
+</h2>
+
+<div class="row g-4">
+    <div class="col-md-6">
+        <div class="card p-4 h-100">
+            <h5 class="mb-4"><i class="bi bi-lightning me-2"></i>Hızlı İşlemler</h5>
+            <div class="d-grid gap-3">
+                <a href="@Url.Action("CreateCargo", "Personel")" class="btn btn-primary btn-lg">
+                    <i class="bi bi-plus-circle me-2"></i>Yeni Kargo Oluştur
+                </a>
+                <a href="@Url.Action("TrackCargos", "Personel")" class="btn btn-outline-primary btn-lg">
+                    <i class="bi bi-search me-2"></i>Kargoları Görüntüle
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card p-4 h-100">
+            <h5 class="mb-4"><i class="bi bi-info-circle me-2"></i>Şube Bilgileri</h5>
+            <table class="table table-borderless">
+                <tr>
+                    <td><i class="bi bi-geo-alt me-2"></i>Şube</td>
+                    <td class="text-end"><strong>@ViewBag.Branch</strong></td>
+                </tr>
+                <tr>
+                    <td><i class="bi bi-person me-2"></i>Personel</td>
+                    <td class="text-end"><strong>@ViewBag.UserName</strong></td>
+                </tr>
+                <tr>
+                    <td><i class="bi bi-calendar me-2"></i>Tarih</td>
+                    <td class="text-end">@DateTime.Now.ToString("dd.MM.yyyy")</td>
+                </tr>
+                <tr>
+                    <td><i class="bi bi-clock me-2"></i>Saat</td>
+                    <td class="text-end">@DateTime.Now.ToString("HH:mm")</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,90 @@
+﻿@model FiberKargo.Models.DashboardViewModel
+@{
+    ViewBag.Title = "Raporlar";
+    ViewBag.ActivePage = "Reports";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h2 class="mb-4"><i class="bi bi-graph-up me-2"></i>Raporlar</h2>
+
+<div class="row g-4 mb-4">
+    <div class="col-md-6">
+        <div class="card p-4">
+            <h5 class="mb-4"><i class="bi bi-box me-2"></i>Kargo İstatistikleri</h5>
+            <div class="row g-3">
+                <div class="col-6">
+                    <div class="border rounded p-3 text-center">
+                        <h3 class="text-primary">@Model.TotalCargos</h3>
+                        <small class="text-muted">Toplam Kargo</small>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="border rounded p-3 text-center">
+                        <h3 class="text-success">@Model.DeliveredCargos</h3>
+                        <small class="text-muted">Teslim Edilen</small>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="border rounded p-3 text-center">
+                        <h3 class="text-warning">@(Model.TotalCargos - Model.DeliveredCargos)</h3>
+                        <small class="text-muted">Bekleyen</small>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="border rounded p-3 text-center">
+                        @{
+                            var rate = Model.TotalCargos > 0
+                                ? ((double)Model.DeliveredCargos / Model.TotalCargos * 100)
+                                : 0;
+                        }
+                        <h3 class="text-info">@rate.ToString("F1")%</h3>
+                        <small class="text-muted">Teslim Oranı</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card p-4">
+            <h5 class="mb-4"><i class="bi bi-people me-2"></i>Personel & Müşteri</h5>
+            <div class="row g-3">
+                <div class="col-6">
+                    <div class="border rounded p-3 text-center">
+                        <h3 class="text-primary">@Model.StaffCount</h3>
+                        <small class="text-muted">Personel Sayısı</small>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="border rounded p-3 text-center">
+                        <h3 class="text-success">@Model.TotalFeedbacks</h3>
+                        <small class="text-muted">Müşteri Yorumu</small>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="border rounded p-3 text-center">
+                        <h3 class="text-warning">
+                            @for (int i = 1; i <= 5; i++)
+                            {
+                                if (i <= Math.Round(Model.AverageRating))
+                                {
+                                    <i class="bi bi-star-fill text-warning"></i>
+                                }
+                                else
+                                {
+                                    <i class="bi bi-star text-warning"></i>
+                                }
+                            }
+                        </h3>
+                        <small class="text-muted">Ortalama Puan: @Model.AverageRating.ToString("F1")</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="card p-4">
+    <h5 class="mb-4"><i class="bi bi-calendar me-2"></i>Rapor Tarihi</h5>
+    <p class="text-muted">Bu rapor @DateTime.Now.ToString("dd MMMM yyyy HH:mm") tarihinde oluşturulmuştur.</p>
+</div>

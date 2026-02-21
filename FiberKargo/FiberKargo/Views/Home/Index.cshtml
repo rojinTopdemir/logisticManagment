@@ -1,0 +1,318 @@
+﻿@{
+    ViewBag.Title = "Ana Sayfa";
+    var branches = ViewBag.Branches as List<FiberKargo.Models.Branch> ?? new List<FiberKargo.Models.Branch>();
+    var trackResults = ViewBag.TrackResults as List<FiberKargo.Models.Cargo>;
+}
+
+<!-- Hero Section -->
+<section class="hero-section text-center">
+    <div class="container">
+        <h1 class="display-4 fw-bold mb-4">
+            <i class="bi bi-box-seam me-2"></i>Fiber Kargo
+        </h1>
+        <p class="lead mb-5">Hızlı, Güvenli, Ekonomik Kargo Hizmeti</p>
+        <div class="d-flex justify-content-center gap-3">
+            <a href="#track" class="btn btn-light btn-lg"><i class="bi bi-search me-2"></i>Kargo Takip</a>
+            <a href="#calculator" class="btn btn-outline-light btn-lg"><i class="bi bi-calculator me-2"></i>Fiyat Hesapla</a>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 p-4 text-center">
+                    <div class="feature-icon mx-auto mb-3">
+                        <i class="bi bi-lightning"></i>
+                    </div>
+                    <h5>Hızlı Teslimat</h5>
+                    <p class="text-muted">24-48 saat içinde Türkiye'nin her yerine teslimat</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 p-4 text-center">
+                    <div class="feature-icon mx-auto mb-3">
+                        <i class="bi bi-shield-check"></i>
+                    </div>
+                    <h5>Güvenli Taşıma</h5>
+                    <p class="text-muted">Sigortalı ve güvenli kargo taşımacılığı</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 p-4 text-center">
+                    <div class="feature-icon mx-auto mb-3">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <h5>Geniş Ağ</h5>
+                    <p class="text-muted">Türkiye genelinde 81 ilde hizmet</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Cargo Track Section -->
+<section id="track" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="section-title mb-4">Kargo Takip</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card p-4">
+                    @using (Html.BeginForm("TrackCargo", "Home", FormMethod.Post))
+                    {
+                        <div class="mb-3">
+                            <label class="form-label">Telefon Numarası</label>
+                            <div class="input-group">
+                                <span class="input-group-text">+90</span>
+                                <input type="text" class="form-control" name="phoneNumber"
+                                       placeholder="5XX XXX XX XX" maxlength="10"
+                                       value="@ViewBag.SearchedPhone">
+                            </div>
+                            <small class="text-muted">Gönderici veya alıcı telefon numarasını girin</small>
+                        </div>
+                        if (ViewBag.TrackError != null)
+                        {
+                            <div class="alert alert-danger">
+                                <i class="bi bi-exclamation-triangle me-2"></i>@ViewBag.TrackError
+                            </div>
+                        }
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-search me-2"></i>Kargo Ara
+                        </button>
+                    }
+                </div>
+            </div>
+            <div class="col-lg-6">
+                @if (trackResults != null && trackResults.Any())
+                {
+                    <div class="card p-4">
+                        <h5 class="mb-3"><i class="bi bi-box me-2"></i>Bulunan Kargolar</h5>
+                        @foreach (var cargo in trackResults)
+                        {
+                            <div class="border rounded p-3 mb-2">
+                                <div class="d-flex justify-content-between">
+                                    <strong>@cargo.CargoNo</strong>
+                                    <span class="badge @(cargo.Status == "Teslim Edildi" ? "bg-success" : cargo.Status == "Dağıtımda" ? "bg-warning" : "bg-info")">
+                                        @cargo.Status
+                                    </span>
+                                </div>
+                                <small class="text-muted">
+                                    @cargo.Origin → @cargo.Destination
+                                </small>
+                            </div>
+                        }
+                    </div>
+                }
+                else if (ViewBag.SearchedPhone != null)
+                {
+                    <div class="card p-4">
+                        <div class="text-center text-muted">
+                            <i class="bi bi-inbox display-4"></i>
+                            <p class="mt-3">Bu numaraya ait kargo bulunamadı.</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Price Calculator Section -->
+<section id="calculator" class="py-5">
+    <div class="container">
+        <h2 class="section-title mb-4">Fiyat Hesapla</h2>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="card p-4">
+                    <form id="priceCalculatorForm">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label">Nereden</label>
+                                <select class="form-select" name="fromCity" id="fromCity" required>
+                                    <option value="">Şehir Seçin</option>
+                                    @foreach (var branch in branches)
+                                    {
+                                        <option value="@branch.Name">@branch.Name</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label">Nereye</label>
+                                <select class="form-select" name="toCity" id="toCity" required>
+                                    <option value="">Şehir Seçin</option>
+                                    @foreach (var branch in branches)
+                                    {
+                                        <option value="@branch.Name">@branch.Name</option>
+                                    }
+                                </select>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Ağırlık (kg)</label>
+                                <input type="number" class="form-control" name="weight" id="weight" step="0.1" min="0.1" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">En (cm)</label>
+                                <input type="number" class="form-control" name="width" id="width" min="1" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Boy (cm)</label>
+                                <input type="number" class="form-control" name="length" id="length" min="1" required>
+                            </div>
+                            <div class="col-md-3">
+                                <label class="form-label">Yükseklik (cm)</label>
+                                <input type="number" class="form-control" name="height" id="height" min="1" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary mt-4">
+                            <i class="bi bi-calculator me-2"></i>Hesapla
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card p-4" id="priceResult" style="display:none;">
+                    <h5 class="text-center mb-4"><i class="bi bi-receipt me-2"></i>Hesaplama Sonucu</h5>
+                    <div class="mb-2 d-flex justify-content-between">
+                        <span>Mesafe:</span>
+                        <strong id="resultDistance">-</strong>
+                    </div>
+                    <div class="mb-2 d-flex justify-content-between">
+                        <span>Desi:</span>
+                        <strong id="resultDesi">-</strong>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-between fs-4">
+                        <span>Toplam:</span>
+                        <strong class="text-primary" id="resultPrice">-</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Branches Section -->
+<section id="branches" class="py-5 bg-white">
+    <div class="container">
+        <h2 class="section-title mb-4">Şubelerimiz</h2>
+        <div class="row g-4">
+            @foreach (var branch in branches)
+            {
+                <div class="col-md-4">
+                    <div class="card branch-card p-4">
+                        <h5><i class="bi bi-geo-alt-fill text-primary me-2"></i>@branch.Name</h5>
+                        <p class="text-muted small mb-1">
+                            <i class="bi bi-pin-map me-2"></i>Koordinat: @branch.Latitude.ToString("F4"), @branch.Longitude.ToString("F4")
+                        </p>
+                        <p class="text-muted small mb-0">
+                            <i class="bi bi-telephone me-2"></i>@branch.Name Şubesi
+                        </p>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<!-- Feedback Section -->
+<section id="feedback" class="py-5">
+    <div class="container">
+        <h2 class="section-title mb-4">Görüşlerinizi Paylaşın</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card p-4">
+                    @using (Html.BeginForm("SubmitFeedback", "Home", FormMethod.Post))
+                    {
+                        <div class="mb-3">
+                            <label class="form-label">Adınız</label>
+                            <input type="text" class="form-control" name="Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Şube</label>
+                            <select class="form-select" name="Branch" required>
+                                <option value="">Şube Seçin</option>
+                                @foreach (var branch in branches)
+                                {
+                                    <option value="@branch.Name">@branch.Name</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Puanınız</label>
+                            <div class="d-flex gap-2" id="ratingStars">
+                                @for (int i = 1; i <= 5; i++)
+                                {
+                                    <i class="bi bi-star fs-4 text-warning" data-rating="@i" style="cursor:pointer;"></i>
+                                }
+                            </div>
+                            <input type="hidden" name="Rating" id="ratingInput" required>
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Yorumunuz</label>
+                            <textarea class="form-control" name="Comment" rows="3"></textarea>
+                        </div>
+                        if (TempData["FeedbackError"] != null)
+                        {
+                            <div class="alert alert-danger">@TempData["FeedbackError"]</div>
+                        }
+                        if (TempData["FeedbackSuccess"] != null)
+                        {
+                            <div class="alert alert-success">@TempData["FeedbackSuccess"]</div>
+                        }
+                        <button type="submit" class="btn btn-primary">
+                            <i class="bi bi-send me-2"></i>Gönder
+                        </button>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+@section scripts {
+    <script>
+    // Price Calculator
+    $('#priceCalculatorForm').on('submit', function(e) {
+        e.preventDefault();
+
+        $.ajax({
+            url: '@Url.Action("CalculatePrice", "Home")',
+            type: 'POST',
+            data: {
+                fromCity: $('#fromCity').val(),
+                toCity: $('#toCity').val(),
+                weight: $('#weight').val(),
+                width: $('#width').val(),
+                length: $('#length').val(),
+                height: $('#height').val()
+            },
+            success: function(response) {
+                if (response.success) {
+                    $('#resultDistance').text(response.distance + ' km');
+                    $('#resultDesi').text(response.desi);
+                    $('#resultPrice').text(response.price + ' ₺');
+                    $('#priceResult').show();
+                } else {
+                    alert(response.message);
+                }
+            }
+        });
+    });
+
+    // Rating Stars
+    $('#ratingStars i').on('click', function() {
+        var rating = $(this).data('rating');
+        $('#ratingInput').val(rating);
+
+        $('#ratingStars i').each(function() {
+            if ($(this).data('rating') <= rating) {
+                $(this).removeClass('bi-star').addClass('bi-star-fill');
+            } else {
+                $(this).removeClass('bi-star-fill').addClass('bi-star');
+            }
+        });
+    });
+    </script>
+}

@@ -1,0 +1,352 @@
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\obj\Debug\FiberKargo.csproj.AssemblyReference.cache
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\obj\Debug\FiberKargo.csproj.CoreCompileInputs.cache
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\FiberKargo.dll.config
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\FiberKargo.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\FiberKargo.pdb
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\csc.exe
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\csc.exe.config
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\csc.rsp
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\csi.exe
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\csi.exe.config
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\csi.rsp
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.AppContext.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Console.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.IO.Compression.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Net.Http.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Net.Sockets.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.ValueTuple.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Xml.XPath.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\vbc.exe
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\vbc.exe.config
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\vbc.rsp
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\VBCSCompiler.exe
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\Antlr3.Runtime.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\EntityFramework.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\Newtonsoft.Json.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.Helpers.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.Mvc.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.Optimization.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.Razor.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.WebPages.Deployment.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.WebPages.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.WebPages.Razor.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\WebGrease.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\EntityFramework.xml
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.Helpers.xml
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.Mvc.xml
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.Optimization.xml
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.Razor.xml
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.WebPages.xml
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.WebPages.Deployment.xml
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\System.Web.WebPages.Razor.xml
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\Newtonsoft.Json.xml
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\Antlr3.Runtime.pdb
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\tr\System.Web.Razor.resources.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\obj\Debug\FiberKargo.csproj.Up2Date
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\obj\Debug\FiberKargo.dll
+C:\Users\volki\source\repos\FiberKargo\FiberKargo\obj\Debug\FiberKargo.pdb
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\FiberKargo.dll.config
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\FiberKargo.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\FiberKargo.pdb
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\csc.exe
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\csc.exe.config
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\csc.rsp
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\csi.exe
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\csi.exe.config
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\csi.rsp
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\Microsoft.Managed.Core.targets
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.AppContext.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Collections.Immutable.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Console.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Globalization.Calendars.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.IO.Compression.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.IO.FileSystem.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Net.Http.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Net.Sockets.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Reflection.Metadata.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.ValueTuple.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Xml.XmlDocument.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Xml.XPath.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\vbc.exe
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\vbc.exe.config
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\vbc.rsp
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\VBCSCompiler.exe
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\roslyn\VBCSCompiler.exe.config
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\Antlr3.Runtime.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\EntityFramework.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\Microsoft.Web.Infrastructure.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\Newtonsoft.Json.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.Helpers.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.Mvc.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.Optimization.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.Razor.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.WebPages.Deployment.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.WebPages.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.WebPages.Razor.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\WebGrease.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\EntityFramework.xml
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.Helpers.xml
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.Mvc.xml
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.Optimization.xml
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.Razor.xml
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.WebPages.xml
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.WebPages.Deployment.xml
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\System.Web.WebPages.Razor.xml
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\Newtonsoft.Json.xml
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\Antlr3.Runtime.pdb
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\tr\System.Web.Helpers.resources.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\tr\System.Web.Mvc.resources.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\tr\System.Web.Optimization.resources.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\tr\System.Web.Razor.resources.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\tr\System.Web.WebPages.resources.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\obj\Debug\FiberKargo.csproj.AssemblyReference.cache
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\obj\Debug\FiberKargo.csproj.CoreCompileInputs.cache
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\obj\Debug\FiberKargo.csproj.Up2Date
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\obj\Debug\FiberKargo.dll
+C:\DERS\FiberKargo\FiberKargo\FiberKargo\obj\Debug\FiberKargo.pdb
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\FiberKargo.dll.config
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\FiberKargo.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\FiberKargo.pdb
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\csc.exe
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\csc.exe.config
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\csc.rsp
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\csi.exe
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\csi.exe.config
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\csi.rsp
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.AppContext.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Console.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.IO.Compression.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Net.Http.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Net.Sockets.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.ValueTuple.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Xml.XPath.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\vbc.exe
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\vbc.exe.config
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\vbc.rsp
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\VBCSCompiler.exe
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\Antlr3.Runtime.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\EntityFramework.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\Newtonsoft.Json.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.Helpers.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.Mvc.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.Optimization.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.Razor.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.WebPages.Deployment.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.WebPages.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.WebPages.Razor.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\WebGrease.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\EntityFramework.xml
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.Helpers.xml
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.Mvc.xml
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.Optimization.xml
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.Razor.xml
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.WebPages.xml
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.WebPages.Deployment.xml
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\System.Web.WebPages.Razor.xml
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\Newtonsoft.Json.xml
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\Antlr3.Runtime.pdb
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\tr\System.Web.Razor.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\obj\Debug\FiberKargo.csproj.AssemblyReference.cache
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\obj\Debug\FiberKargo.csproj.CoreCompileInputs.cache
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\obj\Debug\FiberKargo.csproj.Up2Date
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\obj\Debug\FiberKargo.dll
+C:\Users\topde\OneDrive\Masaüstü\220601070  Sena ÇİFTÇİ\220601070  Sena ÇİFTÇİ\FiberKargo\FiberKargo\obj\Debug\FiberKargo.pdb
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\FiberKargo.dll.config
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\FiberKargo.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\FiberKargo.pdb
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\csc.exe
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\csc.exe.config
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\csc.rsp
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\csi.exe
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\csi.exe.config
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\csi.rsp
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.AppContext.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Console.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.IO.Compression.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Net.Http.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Net.Sockets.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.ValueTuple.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Xml.XPath.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\vbc.exe
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\vbc.exe.config
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\vbc.rsp
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\VBCSCompiler.exe
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\Antlr3.Runtime.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\EntityFramework.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\Newtonsoft.Json.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.Helpers.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.Mvc.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.Optimization.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.Razor.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.WebPages.Deployment.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.WebPages.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.WebPages.Razor.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\WebGrease.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\EntityFramework.xml
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.Helpers.xml
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.Mvc.xml
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.Optimization.xml
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.Razor.xml
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.WebPages.xml
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.WebPages.Deployment.xml
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\System.Web.WebPages.Razor.xml
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\Newtonsoft.Json.xml
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\Antlr3.Runtime.pdb
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\tr\System.Web.Helpers.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\tr\System.Web.Mvc.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\tr\System.Web.Optimization.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\tr\System.Web.Razor.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\tr\System.Web.WebPages.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\tr\System.Web.WebPages.Deployment.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\bin\tr\System.Web.WebPages.Razor.resources.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\obj\Debug\FiberKargo.csproj.AssemblyReference.cache
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\obj\Debug\FiberKargo.csproj.CoreCompileInputs.cache
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\obj\Debug\FiberKargo.csproj.Up2Date
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\obj\Debug\FiberKargo.dll
+C:\Users\topde\OneDrive\Masaüstü\220601029 Rojin TOPDEMİR\220601029 Rojin TOPDEMİR\FiberKargo\FiberKargo\obj\Debug\FiberKargo.pdb
